@@ -13,10 +13,10 @@ function ProductModal() {
       {isModalopen && (
         <div>
           <div className=" fixed inset-0 flex justify-center items-center bg-black bg-opacity-40">
-            <div className="bg-white p-3 flex">
-              <div className="flex flex-col items-start justify-between">
+            <div className="bg-white p-4 flex">
+              <div className="flex flex-col items-center">
                 <img src={product.img} alt="" />
-                <div className="flex gap-5 justify-between items-center p-1">
+                <div className="flex gap-5 justify-between items-center p-3">
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
@@ -26,7 +26,7 @@ function ProductModal() {
               <div className=" flex flex-col gap-8">
                 <div className="flex justify-between gap-10">
                   <p className="font-roboto font-[600] text-[22px]">{product.name}</p>
-                 <img onClick={closeModal} src={cross} alt="" />
+                 <img className="h-7" onClick={closeModal} src={cross} alt="" />
                 </div>
 
                 <div>
@@ -54,7 +54,7 @@ function ProductModal() {
                 <p>{product.shiping}</p>
                 </div>
                  <div className=" flex justify-center">
-                  <button className="bg-customRed p-2 w-80 text-white font-roboto font-[600]">Choose Now</button>
+                  <button onClick={closeModal} className="bg-customRed p-2 w-96 text-white font-roboto font-[600] text-[20px]">Choose Now</button>
                  </div>
               </div>
             </div>
