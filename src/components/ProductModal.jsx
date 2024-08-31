@@ -11,18 +11,18 @@ function ProductModal() {
         <div>
           <div className=" fixed inset-0 flex justify-center items-center bg-black bg-opacity-40">
             <div className="bg-white p-5 flex">
-              <div>
+              <div className="flex flex-col m-1 mr-5">
                 <img src={product.img} alt="" />
-                <div className="flex gap-5 justify-start items-center p-1">
+                <div className="flex gap-7 justify-between items-center p-1">
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
                 </div>
               </div>
-              <div>
+              <div className=" flex flex-col gap-10">
                 <div className="flex justify-between gap-10">
-                  <p className="font-roboto font-[600]">{product.name}</p>
+                  <p className="font-roboto font-[600] text-[22px]">{product.name}</p>
                   <button onClick={closeModal}>close</button>
                 </div>
 
@@ -33,7 +33,7 @@ function ProductModal() {
                 </div>
 
                 <div>
-                  <p>Product Description</p>
+                  <p className="font-roboto">Product Description</p>
 
                   <p>{product.description}</p>
                 </div>
@@ -50,7 +50,7 @@ function ProductModal() {
                 <p>{product.shiping}</p>
                 </div>
                  <div>
-                  <button>Choose Now</button>
+                  <button className="bg-customRed p-2 w-40">Choose Now</button>
                  </div>
               </div>
             </div>
