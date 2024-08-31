@@ -1,0 +1,25 @@
+{
+    "details": [
+      {
+        "id": 1,
+        "name": "Raju Rassibomb",
+        "img": "/assets/modalbanner.png",
+        "otherimg": "/assets/crackers.png",
+        "price": "200",
+        "description": "This product packs an extra punch...",
+        "Contents": ["10 hand-hurting pieces of rassi bombs", "Jilled with great pain", "Raju’s hopes"],
+        "shiping": "Before Raju understands that his dreams do not matter."
+      },
+      {
+        "id": 2,
+        "name": "Raju Rassibomb",
+        "img": "/assets/modalbanner.png",
+        "otherimg": "/assets/crackers.png",
+        "price": "200",
+        "description": "This product packs an extra punch...",
+        "Contents": ["10 hand-hurting pieces of rassi bombs", "Jilled with great pain", "Raju’s hopes"],
+        "shiping": "Before Raju understands that his dreams do not matter."
+      }
+    ]
+  }
+  
