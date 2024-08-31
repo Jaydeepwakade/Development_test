@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { Modalcontext } from "../context/ProductContext";
+import Vector from "/assets/Vector.png"
+import cross from "/assets/cross.png"
 
 function ProductModal() {
   const { openModal, product, closeModal, isModalopen } =
@@ -23,7 +25,7 @@ function ProductModal() {
               <div className=" flex flex-col gap-10">
                 <div className="flex justify-between gap-10">
                   <p className="font-roboto font-[600] text-[22px]">{product.name}</p>
-                  <button onClick={closeModal}>close</button>
+                 <img onClick={closeModal} src={cross} alt="" />
                 </div>
 
                 <div>
@@ -31,20 +33,20 @@ function ProductModal() {
                     MRP: {product.price} /-
                   </p>
                 </div>
-
+            <img src={Vector} alt="" />
                 <div>
                   <p className="font-roboto">Product Description</p>
 
                   <p>{product.description}</p>
                 </div>
-
+                <img src={Vector} alt="" />
                 <div>
                   <p>Product Contents :</p>
                   {product.Contents.map((ele) => {
                     return <li>{ele}</li>;
                   })}
                 </div>
-
+                <img src={Vector} alt="" />
                 <div>
                   <p>shipping</p>
                 <p>{product.shiping}</p>
