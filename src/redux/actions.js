@@ -29,7 +29,7 @@ const fallbackData = [
             "Filled with great pain",
             "Raju’s hopes"
         ],
-        shipping: "Before Raju understands that his dreams do not matter."
+        shiping: "Before Raju understands that his dreams do not matter."
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ const fallbackData = [
             "Filled with great pain",
             "Raju’s hopes"
         ],
-        shipping: "Before Raju understands that his dreams do not matter."
+        shiping: "Before Raju understands that his dreams do not matter."
     }
 ];
 

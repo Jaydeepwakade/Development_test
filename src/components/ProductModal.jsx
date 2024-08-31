@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Modalcontext } from "../context/ProductContext";
 import Vector from "/assets/Vector.png"
 import cross from "/assets/cross.png"
+import star from "/assets/star.png"
 
 function ProductModal() {
   const { openModal, product, closeModal, isModalopen } =
@@ -12,17 +13,17 @@ function ProductModal() {
       {isModalopen && (
         <div>
           <div className=" fixed inset-0 flex justify-center items-center bg-black bg-opacity-40">
-            <div className="bg-white p-5 flex">
-              <div className="flex flex-col m-1 mr-5">
+            <div className="bg-white p-3 flex">
+              <div className="flex flex-col items-start justify-between">
                 <img src={product.img} alt="" />
-                <div className="flex gap-7 justify-between items-center p-1">
+                <div className="flex gap-5 justify-between items-center p-1">
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
                   <img src={product.otherimg} alt="" />
                 </div>
               </div>
-              <div className=" flex flex-col gap-10">
+              <div className=" flex flex-col gap-8">
                 <div className="flex justify-between gap-10">
                   <p className="font-roboto font-[600] text-[22px]">{product.name}</p>
                  <img onClick={closeModal} src={cross} alt="" />
@@ -35,24 +36,25 @@ function ProductModal() {
                 </div>
             <img src={Vector} alt="" />
                 <div>
-                  <p className="font-roboto">Product Description</p>
+                  <p className="font-roboto font-[600]">Product Description :</p>
 
                   <p>{product.description}</p>
                 </div>
                 <img src={Vector} alt="" />
                 <div>
-                  <p>Product Contents :</p>
+                  <p className="font-roboto  font-[600]">Product Contents :</p>
                   {product.Contents.map((ele) => {
-                    return <li>{ele}</li>;
+                    return <div className=" flex gap-1">
+                      <img className="w-6" src={star} alt="" />{ele}<p></p></div>
                   })}
                 </div>
                 <img src={Vector} alt="" />
                 <div>
-                  <p>shipping</p>
+                  <p className="font-roboto font-[600]">shipping</p>
                 <p>{product.shiping}</p>
                 </div>
-                 <div>
-                  <button className="bg-customRed p-2 w-40">Choose Now</button>
+                 <div className=" flex justify-center">
+                  <button className="bg-customRed p-2 w-80 text-white font-roboto font-[600]">Choose Now</button>
                  </div>
               </div>
             </div>
